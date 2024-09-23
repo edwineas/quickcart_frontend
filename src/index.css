@@ -7,10 +7,24 @@ body {
     @apply font-poppins;
 }
 
+/* commonon */
+.mobhide {
+    @apply hidden sm:flex;
+}
+.mainh {
+    @apply font-semibold text-2xl;
+}
+
+/* navbar */
 .navbtn {
     @apply flex items-center gap-2;
 }
 
-.mobhide {
-    @apply hidden sm:flex;
+/* feedpage */
+.carousel {
+    @apply flex overflow-x-auto whitespace-nowrap gap-[20px] pt-5;
+    -webkit-overflow-scrolling: touch; /* This property doesn't have a direct Tailwind equivalent */
+}
+.carousel::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
 }
